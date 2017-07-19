@@ -2,7 +2,7 @@
 
 // Click Event for the QUOTE BUTTON 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-// timeGenerator();
+timeGenerator();
 
 // Array contains 6 items
 var quotes = [{
@@ -74,30 +74,6 @@ function printQuote() {
         // full print
         quote + source + '<span class="citation">' + citation + '</span>' + '<span class="year">' + year + '</span>' + tags
     ];
-
-// === ///////// === ///////// === ///////// === ///////// === ///////// === ///////// === ///////// === /////////
-// I have tried to impletement the code below but for some reason it didn't work for CITATION and YEAR. The exact same change was applied to QUOTE, SOURCE and TAGS and it worked fine.
-// I would appreciate if someone could comment on this.
-
- /* 
-    quote = '<p class="quote">' + randomQ.quote + '</p>';
-    source = '<p class="source">' + randomQ.source;
-    tags = '<span class="tag">' + randomQ.tags + '</span></p>';
-    citation = '<span class="citation">' + randomQ.citation + '</span>';
-    year = '<span class="year">' + randomQ.year + '</span>';
-
-    // HTML Structure
-    printArray = [
-        // print QUOTE + SOURCE + TAGS
-        quote + source + tags,
-        // print QUOTE + SOURCE + CITATION + TAGS
-        quote + source + citation + tags,
-        // print QUOTE + SOURCE + YEAR + TAGS
-        quote + source + year + tags,
-        // full print
-        quote + source + citation + year + tags
-    ];   
-*/
 
     // Call Color Generator function
     colorGenerator();
